@@ -54,9 +54,9 @@ public class MovieTableViewCell: UITableViewCell {
     private func setupUI() {
         let stackView = UIStackView()
         stackView.axis = .horizontal
-        stackView.distribution = .equalSpacing
+        stackView.distribution = .fill
         stackView.spacing = 8
-        stackView.alignment = .center
+        stackView.alignment = .leading
         stackView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(stackView)
         NSLayoutConstraint.activate([
